@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_address_screen"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.Address.AddAddressActivity">
+
+    <TextView
+        android:id="@+id/title_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Add New Address"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name_of_new_address"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_add_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/street_of_new_address"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_of_new_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Street"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/city_of_new_address"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/street_of_new_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="City"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/state_of_new_address"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_of_new_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:completionThreshold="2"
+        android:ems="10"
+        android:hint="State"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/submit_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_marginEnd="30dp"/>
+
+    <EditText
+        android:id="@+id/hidden_storage_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="94dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>

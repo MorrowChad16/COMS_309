@@ -1,0 +1,59 @@
+Last updated: 9/14/19
+
+Server:coms-309-bs-3.misc.iastate.edu
+
+to access http services on server
+port: 8080
+example: http://coms-309-bs-3.misc.iastate.edu:8080{/addExtensionHere} (must be connected to ISU network)
+----------------------------------------
+mysql user:team3 password:iLoveComs309!
+mysql user:team3Admin password:*********
+mysql workbench
+----------------------------------------
+----Mapped urls:-----------------------
+
+/user/{
+*createUser
+*validateUser
+*testme
+*count
+*findByUserName
+*all
+}
+
+example:  "http://coms-309-bs-3.misc.iastate.edu:8080/user/testme"     <- insert in web browser to test if the jar is running.
+-----------------------------------------------
+detailed notes:
+
+create user - takes JSON object with parameters name (case insensitive) and password. 
+return type: String
+"0" = if user name exists
+"1" = if user created
+"404" = if an exception occurred
+
+validate user - takes JSON object with parameters name (case insensitive) and password. 
+return type: String 
+"0" = if no user found
+"1" = if password and username matched
+"2" = password is incorrect
+"404" = if an excpetion occured
+
+all - doesn't take any data. returns a JSON Object with a JSON array of all users in user table. provides name, id, and profileId. Supported by web browser.
+
+findByUserName - takes name as String argument. 
+return type: String
+"0" = user not found
+"1" = user found
+"404" = an exception occurred 
+
+count - returns number of users as type long. Supported by web browser.
+
+testme - returns "tested". Supported by web browser.
+
+
+
+
+
+
+--------Tables------------------------
+name:user, fields: 

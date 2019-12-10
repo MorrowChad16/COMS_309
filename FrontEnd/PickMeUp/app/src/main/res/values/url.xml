@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="validate_user">http://coms-309-bs-3.misc.iastate.edu:8080/user/validateUser</string> <!--   coms-309-bs-3.misc.iastate.edu   -->
+    <string name="update_user">http://coms-309-bs-3.misc.iastate.edu:8080/user/updateUser</string>
+    <string name="all_users">http://coms-309-bs-3.misc.iastate.edu:8080/user/all</string>
+    <string name="create_user">http://coms-309-bs-3.misc.iastate.edu:8080/user/createUser</string>
+    <string name="grab_court_info_all">http://coms-309-bs-3.misc.iastate.edu:8080/gameLocations/all</string>
+    <string name="add_court_info">http://coms-309-bs-3.misc.iastate.edu:8080/gameLocations/addLoc</string>
+    <string name="grab_court_sport_basketball">http://coms-309-bs-3.misc.iastate.edu:8080/gameLocations/findBySport?sport=basketball</string>
+    <string name="grab_court_sport_football">http://coms-309-bs-3.misc.iastate.edu:8080/gameLocations/findBySport?sport=football</string>
+    <string name="find_by_username">http://coms-309-bs-3.misc.iastate.edu:8080/user/findByUsername</string>
+    <string name="find_by_email">http://coms-309-bs-3.misc.iastate.edu:8080/user/findByEmail</string>
+    <string name="grab_game_all">http://coms-309-bs-3.misc.iastate.edu:8080/game/all</string>
+    <string name="add_user_to_team1">http://coms-309-bs-3.misc.iastate.edu:8080/game/addTeam1Player</string>
+    <string name="add_user_to_team2">http://coms-309-bs-3.misc.iastate.edu:8080/game/addTeam2Player</string>
+    <string name="grab_court_by_id">http://coms-309-bs-3.misc.iastate.edu:8080/gameLocations/findById/</string>
+    <string name="grab_games_by_location_id">http://coms-309-bs-3.misc.iastate.edu:8080/game/findByGameLocationId/</string> <!-- upcoming games -->
+    <!-- <string name="grab_games_by_location_id">http://coms-309-bs-3.misc.iastate.edu:8080/game/findAllGamesByGameLocationId/</string> --> <!-- all games -->
+    <string name="grab_games_by_id">http://coms-309-bs-3.misc.iastate.edu:8080/game/findByGameId/</string>
+    <string name="grab_games_guest">http://coms-309-bs-3.misc.iastate.edu:8080/game/all/guest/?</string>
+    <string name="grab_user_games">http://coms-309-bs-3.misc.iastate.edu:8080/user/findGameRecordsByUserId/</string>
+    <string name="remove_player">http://coms-309-bs-3.misc.iastate.edu:8080/game/removePlayer</string>
+    <string name="grab_test_socket">ws://coms-309-bs-3.misc.iastate.edu:8080/websocket/</string>            
+    <string name="grab_game_chat_socket">ws://coms-309-bs-3.misc.iastate.edu:8080/gameChatSocket/</string>
+    <string name="grab_admin_court_socket">ws://coms-309-bs-3.misc.iastate.edu:8080/adminLocationSocket/</string>
+    <string name="add_user_address">http://coms-309-bs-3.misc.iastate.edu:8080/userLocations/addLocation</string>
+    <string name="grab_user_chats">http://coms-309-bs-3.misc.iastate.edu:8080/user/findChatInfoByUserId/</string>
+    <string name="update_user_password">http://coms-309-bs-3.misc.iastate.edu:8080/user/changePassword/</string>
+    <string name="remove_address">http://coms-309-bs-3.misc.iastate.edu:8080/userLocations/removeLocation</string>
+    <string name="add_game">http://coms-309-bs-3.misc.iastate.edu:8080/game/addGame/</string>
+</resources>

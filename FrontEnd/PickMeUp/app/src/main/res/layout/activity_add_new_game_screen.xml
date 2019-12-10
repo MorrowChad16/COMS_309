@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_new_game"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.CourtGames.AddNewGameScreen">
+
+    <TextView
+        android:id="@+id/title_add_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Add New Game"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/game_location"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_add_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Court"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:focusable="false"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/sport_of_new_game"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:completionThreshold="0"
+        android:ems="10"
+        android:hint="Sport"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/game_date"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sport_of_new_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Date"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/game_time"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Time"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/size_of_new_game"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:completionThreshold="0"
+        android:ems="10"
+        android:hint="Size"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/submit_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/size_of_new_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

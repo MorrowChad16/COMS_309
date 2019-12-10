@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.CourtGames.LocationGamesScreen"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/sport_panel"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-13dp"
+        android:background="@drawable/rounded_rectangle_white_grey_border">
+
+        <ImageView
+            android:id="@+id/close_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/game_static"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:text="Sport"
+            android:textAlignment="center"
+            android:textColor="@color/quantum_black_100"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/games_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/game_static"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/submit_game_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/games_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="Display Changes"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_panel"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-13dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_rectangle_white_grey_border">
+
+        <ImageView
+            android:id="@+id/close_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/time_static"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/quantum_black_100"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/time_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_static"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <Spinner
+                android:id="@+id/begin_time"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/to_time_static"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="to"
+                android:textAlignment="center"/>
+
+            <Spinner
+                android:id="@+id/end_time"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_time_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="Display Changes"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/date_panel"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-13dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_rectangle_white_grey_border">
+
+        <ImageView
+            android:id="@+id/close_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/date_static"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textColor="@color/quantum_black_100"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/begin_date_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_static"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Spinner
+                android:id="@+id/begin_date_month"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/begin_date_day"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/begin_date_year"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/to_date_static"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/begin_date_linear"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:text="to"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/end_date_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Spinner
+                android:id="@+id/end_date_month"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/end_date_day"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/end_date_year"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_date_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_date_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="Display Changes"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/filters_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:textColor="@color/quantum_black_100">
+
+            <Button
+                android:id="@+id/sport_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Sport"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/weekday_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Weekday"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/weekend_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Weekend"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/date_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Date"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/time_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Time"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/size_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Size"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_100"/>
+
+            <Button
+                android:id="@+id/difficulty_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Difficulty"
+                android:background="@drawable/rounded_rectangle_white_grey_border"
+                android:layout_marginStart="8dp"
+                android:textSize="12sp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/quantum_black_100"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/games_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="486dp"
+        android:layout_above="@+id/add_new_game"
+        android:layout_below="@+id/num_games_at_court"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-35dp" />
+
+    <Button
+        android:id="@+id/add_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Add Game" />
+
+    <TextView
+        android:id="@+id/games_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Open Games"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/num_games_at_court"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filters_scroll"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:text="NO OPEN GAMES"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

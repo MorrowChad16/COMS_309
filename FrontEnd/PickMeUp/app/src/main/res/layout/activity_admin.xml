@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.Admin.AdminActivity">
+
+    <EditText
+        android:id="@+id/search_bar_admin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text_home"
+        android:layout_alignBottom="@+id/admin_update_old_court_recycler"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-46dp"
+        android:background="@drawable/search_bar"
+        android:hint="Search PickMeUp"
+        android:paddingLeft="30dp" />
+
+    <ImageButton
+        android:id="@+id/search_bar_image_admin"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/search_bar_admin"
+        android:layout_alignBottom="@+id/search_bar_admin"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:focusableInTouchMode="false"
+        android:hapticFeedbackEnabled="true"
+        android:longClickable="true"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <TextView
+        android:id="@+id/text_admin_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ADMIN"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/admin_confirm_court_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_admin_static"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:text="Confirm New Courts"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_confirm_new_court_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/admin_confirm_court_static"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp" />
+
+    <TextView
+        android:id="@+id/admin_confirm_old_courts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_confirm_new_court_recycler"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:paddingLeft="10dp"
+        android:text="Update Old Courts"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_update_old_court_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_below="@+id/admin_confirm_old_courts"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="110dp" />
+
+</RelativeLayout>

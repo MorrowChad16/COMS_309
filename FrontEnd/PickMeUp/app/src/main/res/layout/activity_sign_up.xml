@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SignUp"
+    android:background="@android:color/white">
+
+    <include layout="@layout/content_sign_up" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-550dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-450dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-350dp"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-250dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password_new"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-150dp"
+        android:ems="10"
+        android:hint="Password (8 characters)"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password_new_verification"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:ems="10"
+        android:hint="Password Verification"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/homeAddress"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Street"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPostalAddress" />
+
+    <AutoCompleteTextView
+        android:id="@+id/state"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:hint="State"
+        android:imeOptions="actionNext"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/zip_code"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="550dp"
+        android:text="Create Account" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

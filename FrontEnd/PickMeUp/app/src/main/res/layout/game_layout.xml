@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/date_time_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gameCourtName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Date and time"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/gameCourtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Court Name"
+                        android:textColor="#1A1A1A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/courtLocationId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="182dp"
+                        android:layout_marginLeft="182dp"
+                        android:layout_marginTop="13dp"
+                        android:text="longitude"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/latitude_invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="254dp"
+                        android:layout_marginLeft="254dp"
+                        android:layout_marginTop="20dp"
+                        android:text="latitude"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/game_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="254dp"
+                        android:layout_marginLeft="254dp"
+                        android:layout_marginTop="20dp"
+                        android:text="game id"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/longitude_invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="290dp"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="11dp"
+                        android:text="location id"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/gameTypeView"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="-14dp"
+                        android:scaleType="matrix" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

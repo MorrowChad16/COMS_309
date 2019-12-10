@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Chat</title>
+    </head>
+    <body>
+
+        <table>
+            <tr>
+                    <td colspan="80">
+                            <input type="text" id="webPath" value="coms-309-bs-3.misc.iastate.edu:8080/gameChatSocket"  size=80> 
+                        </td>
+             
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <pre>'localhost:8080/websocket' or 'coms-309-bs-3.misc.iastate.edu:8080/websocket' </pre>  
+                    </td>
+         
+        </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="username" placeholder="Username"/>
+                    <input type="text" id="userId" placeholder="UserId"/>
+                    <input type="text" id="chatId" placeholder="ChatId"/>
+                    <button type="button" onclick="connect();" >Connect</button>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <textarea readonly="true" rows="10" cols="80" id="log"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" size="51" id="msg" placeholder="Message"/>
+                    <button type="button" onclick="send();" >Send</button>
+                </td>
+            </tr>
+        </table>
+        <p id="para"></p>
+    </body>
+
+    <script src="websocket.js"></script>
+
+</html>

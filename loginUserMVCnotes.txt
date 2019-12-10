@@ -1,0 +1,22 @@
+loggedDataSource - authenticates the user, calls volley method returns result
+loggedInUser contains data model of fields for user. contains data.
+ loggedInuserView - exposes authenticated loggedInUser info to UI
+ loginFormState - contains data validation state of login form 
+ loginResult - result of authentication
+ loginViewModel - contains prevalidation methods and interfaces data model with loggedInuserView
+ loginViewModelFactory - creates instance of loginViewModel (similar to singleton)
+ Result - class that holds success object(loggedInUser) or error object (exceptions)
+LoginRepository -creates authentication and grabs user info from server, also maintains an in-memory cache of login status and user credentials info, see https://developer.android.com/training/articles/keystore
+dataflow:
+loginActivity > loginViewModel > LoginRepository > LoginDataSource <.. <.. <..
+
+LoginDataSource needs to be updated with a volley callback method to return json object(string) within class to setup the loggedInUser, or atleast return the error integer code(Integer).
+Currently hard wired for failed login or admin/password 
+not authenticating users.
+
+
+
+
+
+https://medium.com/@kevalpatel2106/how-to-make-the-perfect-singleton-de6b951dfdb0
+https://www.geeksforgeeks.org/singleton-class-java/
